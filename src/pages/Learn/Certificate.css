@@ -1,0 +1,103 @@
+.certificate-container {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  margin: 50px auto;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  background: #fff;
+}
+
+.cert-frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cert-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 60px;
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vv-logo {
+  width: 180px;
+  position: relative;
+  left: 100px;
+
+}
+
+.scheme-logo {
+  width: 125px;
+  position: relative;
+  right: 100px;
+}
+
+.cert-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 40px;
+  font-family: "Old English Text MT", cursive;
+  position: relative;
+  top: -40px;
+}
+
+.cert-text {
+  font-size: 20px;
+  margin: 40px auto;
+  width: 80%;
+  line-height: 1.6;
+  position: relative;
+  top: -60px;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.badge {
+  width: 160px;
+  height:140px;
+  position: relative;
+  right: -250px;
+  top: -70px;
+}
+
+.qr-code {
+  width: 50px;
+ height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 190px;
+  top: 110px;
+}
+
+.cert-number {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  position: relative;
+  top: 70px;
+  right: 410px;
+}
+
+.hashtag {
+  font-weight: bold;
+  color: #007a2a;
+  margin-top: 5px;
+  position: relative;
+  top: 40px;
+  left: 70px;
+}

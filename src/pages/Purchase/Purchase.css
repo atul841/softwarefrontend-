@@ -1,0 +1,221 @@
+.Purchase-container {
+  padding: 40px;
+  background-color: #f9fbfd;
+  font-family: "Poppins", sans-serif;
+}
+
+.plans-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+  text-align: left;
+}
+
+/* === PLANS ROW === */
+.plans-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* === CARD DESIGN === */
+.plan-card-modern {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  padding: 35px 25px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.plan-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card-modern.active {
+  border: 2px solid #00bfa6;
+}
+
+.ribbon {
+  position: absolute;
+  top: 15px;
+  right: -40px;
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transform: rotate(45deg);
+  padding: 5px 0;
+}
+
+/* === CARD CONTENT === */
+.plan-title {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.plan-price {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.plan-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.select-modern-btn {
+  border: 1.5px solid #00bfa6;
+  background: transparent;
+  color: #000;
+  border-radius: 25px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.select-modern-btn:hover {
+  background: #00bfa6;
+  color: white;
+}
+
+/* === FORM BELOW === */
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 35px;
+}
+
+.form-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-size: 14px;
+}
+
+/* === PROCEED BUTTON === */
+.proceed-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #00bfa6, #00c853);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.proceed-btn:hover {
+  opacity: 0.9;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan-card-modern {
+    max-width: 350px;
+  }
+}
+
+.payment-bg {
+  background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.payment-title {
+  color: #0ea5e9;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.total {
+  color: #10b981;
+  margin-top: 15px;
+}
+
+.pay-btn {
+  background: #06b6d4;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pay-btn:hover {
+  background: #0891b2;
+}
+
+.secure-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: gray;
+}

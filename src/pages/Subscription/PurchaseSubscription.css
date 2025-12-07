@@ -1,0 +1,245 @@
+.subscription-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f5f6fb;
+  padding: 30px;
+  border-radius: 12px;
+  margin-right: 300px;
+   flex: 1;
+  margin-left: 340px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+
+.plans-section {
+  flex: 2;
+  min-width: 600px;
+  margin-top:100px ;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 20px;     
+  color: #0a0a23;          /* 🔹 Thoda deep shade for bold look */
+  font-size: 90px;         /* 🔹 Pehle 30px tha — ab aur bada */
+  text-transform: uppercase;
+  letter-spacing: 1px;     /* 🔹 Text spacing thoda enhance */
+}
+
+
+
+.plans-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 25px;
+  width: 100%;
+  
+}
+
+/* ===== Card Styling ===== */
+.plan-card {
+  position: relative; /* 🟢 Ribbon ke liye */
+  background: #fff;
+  background: url("./logo.png") no-repeat center center / cover; /* 🖼️ Background image */
+  border-radius: 15px;
+  width: 100%;
+  max-width: 480px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 230px; /* 🟢 Title & desc ke liye space */
+  
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Center the 3rd card */
+.plan-card:nth-child(3) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+/* ===== Text Styles ===== */
+.plan-title {
+  font-size: 1.2rem;
+  color: #0a0a23;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.plan-price {
+  font-size: 1.6rem;
+  color: #0a3069;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.plan-desc {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+  min-height: 35px;
+  margin-bottom: 15px;
+}
+
+/* ===== Buttons ===== */
+.plan-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.plan-btn.disabled {
+  background-color: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.plan-btn.active {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* ===== Ribbons ===== */
+.ribbon {
+  position: absolute;
+  top: 10px;
+  right: -12px;
+  background-color: #22c55e;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ribbon.basic {
+  background-color: #22c55e;
+}
+.ribbon.pro {
+  background-color: #16a34a;
+}
+.ribbon.mega {
+  background-color: #059669;
+}
+
+
+
+
+
+
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .subscription-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plans-section {
+    min-width: 100%;
+  }
+
+  .team-chart-section {
+    width: 100%;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card:nth-child(3) {
+    grid-column: auto;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-chart-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .team-chart-title {
+    font-size: 1.3rem;
+  }
+
+  .team-chart-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+
+.plan-btn {
+  width: 60%;               
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: center;        
+  margin: 0 auto;            
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.plan-btn.disabled {
+  background-color: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.plan-btn.active {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.plan-btn.active:hover {
+  background-color: #005f8c; 
+}
+
+
+.plans-section .section-title {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: #0a0a23;
+  font-size: 30px !important; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-title{ 
+  margin-top:-50px;
+}
+
+
+
+
+
+
+
+

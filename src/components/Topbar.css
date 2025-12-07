@@ -1,0 +1,226 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 150;
+  transition: left 0.3s ease;
+}
+
+.topbar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.date-box {
+  background: #f4f4f4;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 24px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #4b49e6;
+}
+
+.notification-btn {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: #e53e3e;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1px 5px;
+  line-height: 1;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.referral-box {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  color: white;
+  width: 900px;
+  height: 100px;
+  margin-top: 23px;
+}
+
+.referral-box input:focus {
+  border-color: #4b49e6;
+  box-shadow: 0 0 5px rgba(75, 73, 230, 0.3);
+}
+
+.referral-box button {
+  background: #4b49e6;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  position: relative;
+  left: -170px;
+  top: 25px;
+}
+
+.referral-box button:hover {
+  background: #3735d0;
+}
+
+.referral-box .active {
+  background: #eaffea;
+  color: #12a312;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 25px;
+  margin-left: 770px;
+  margin-top: -150px;
+}
+
+/* ✅ Responsive Design (Single Line Layout + Hide icons on mobile) */
+@media (max-width: 1024px) {
+  .topbar {
+    left: 0;
+    padding: 0 16px;
+  }
+
+  .dashboard-header {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .referral-box {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap; /* 🟢 एक लाइन में रखेगा */
+    overflow-x: auto;  /* 🟢 scroll हो सके */
+    white-space: nowrap;
+  }
+
+  .referral-box input {
+    width: 60% !important;
+    font-size: 16px !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  .referral-box button {
+    left: 0 !important;
+    top: 0 !important;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .referral-box .active {
+    margin: 0 !important;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .date-box {
+    font-size: 18px;
+  }
+}
+
+/* ✅ Mobile Devices (Hide settings & notification) */
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .referral-box {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+  }
+
+  .referral-box input {
+    width: 65% !important;
+    font-size: 14px !important;
+  }
+
+  .referral-box button {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .referral-box .active {
+    font-size: 16px;
+  }
+
+  .topbar-title {
+    font-size: 20px;
+  }
+
+  .date-box {
+    display: none;
+  }
+
+  /*  Settings & Notification buttons hide on mobile */
+  .icon-btn,
+  .notification-btn {
+    display: none !important;
+  }
+
+  .topbar-right {
+    gap: 10px;
+  }
+}

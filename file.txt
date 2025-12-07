@@ -1,0 +1,50 @@
+src/
+│
+├── config/
+│   └── navConfig.js             ✅ (आपका दिया हुआ code)
+│
+├── components/
+│   ├── Sidebar.jsx              ✅ dynamic sidebar (from navConfig)
+│   ├── Topbar.jsx
+│
+├── pages/                       ✅ अलग-अलग page components
+│   ├── Dashboard/
+│   │   └── Dashboard.jsx
+│   ├── Profile/
+│   │   ├── MyProfile.jsx
+│   │   └── KYCDetails.jsx
+│   ├── Members/
+│   │   ├── MySubordinate.jsx
+│   │   └── MySubordinateLevel.jsx
+│   ├── Subscription/
+│   │   ├── PurchaseSubscription.jsx
+│   │   └── SubscriptionReport.jsx
+│   ├── Learn/
+│   │   └── ViewVideos.jsx
+│   ├── Income/
+│   │   ├── Referral.jsx
+│   │   └── LearnEarn.jsx
+│   ├── Withdrawal/
+│   │   ├── Withdrawal.jsx
+│   │   └── Report.jsx
+│   ├── Fund/
+│   │   ├── Deposit.jsx
+│   │   ├── DepositHistory.jsx
+│   │   ├── DepositWalletHistory.jsx
+│   │   ├── WithdrawWalletHistory.jsx
+│   │   ├── ReferralWalletTransfer.jsx
+│   │   ├── ReferralWalletHistory.jsx
+│   │   ├── LearnEarnWalletTransfer.jsx
+│   │   └── LearnEarnWalletHistory.jsx
+│   ├── Settings/
+│   │   ├── ChangePin.jsx
+│   │   ├── ChangePassword.jsx
+│   │   ├── UserNotification.jsx
+│   │   └── AdminNotification.jsx
+│   ├── Support/
+│   │   ├──     
+│   │   └── SupportHistory.jsx
+│   └── Logout.jsx
+│
+├── App.jsx                      ✅ full layout (Sidebar + Topbar + Routes)
+└── index.jsx

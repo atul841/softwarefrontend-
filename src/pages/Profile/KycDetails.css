@@ -1,0 +1,134 @@
+/* ==== Container ==== */
+.kyc-container {
+  background: #ffffff;
+  padding: 45px 230px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  max-width: 95%;
+  margin: 20px auto; /* Closer to top and sidebar */
+  box-sizing: border-box;
+  
+}
+
+/* ==== Header ==== */
+.kyc-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.kyc-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ==== Form Grid ==== */
+.kyc-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px; /* Good spacing between columns */
+  align-items: start;
+}
+
+/* ==== Columns ==== */
+.kyc-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ==== Labels ==== */
+.kyc-column label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== Inputs ==== */
+.kyc-column input {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.kyc-column input:focus {
+  border-color: #2563eb;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+/* ==== File Input ==== */
+.kyc-column input[type="file"] {
+  padding: 6px;
+  background: #fff;
+  border: 1.5px dashed #cbd5e1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.kyc-column input[type="file"]:hover {
+  border-color: #2563eb;
+  background: #f0f7ff;
+}
+
+/* ==== Image Preview ==== */
+.kyc-preview {
+  width: 180px;
+  height: 110px;
+  object-fit: cover;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== Button Section ==== */
+.kyc-btn-wrap {
+  grid-column: span 2; /* Button takes full width */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.kyc-btn {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.kyc-btn:hover {
+  background-color: #1e4fd1;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 992px) {
+  .kyc-form {
+    grid-template-columns: 1fr;
+  }
+  .kyc-btn-wrap {
+    justify-content: center;
+  }
+}
+
+
+.note-text {
+  display: block;
+  font-size: 12px;
+  color: #ff5555;
+  margin-top: 4px;
+}

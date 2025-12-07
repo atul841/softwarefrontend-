@@ -1,0 +1,49 @@
+.status-section {
+  background: #f5f7ff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+/* ==== Chart Box ==== */
+.status-chart-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0a0a23;
+}
+
+.chart-header select {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  background: transparent;
+  cursor: pointer;
+}
+
+.chart-info {
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 900px) {
+  .status-section {
+    padding: 15px;
+  }
+}

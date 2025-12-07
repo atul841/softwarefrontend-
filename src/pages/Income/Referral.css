@@ -1,0 +1,99 @@
+.referral-container {
+   flex: 1;
+  margin-left: 240px; 
+  margin-top: 105px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.filter-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.filter-row {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.filter-row label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.filter-row input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-row button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4e46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-row button:hover {
+  background: #3730a3;
+}
+
+.table-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-header h3 {
+  margin: 0;
+}
+
+.table-header button {
+  padding: 6px 12px;
+  background: #059669;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #eef2ff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}

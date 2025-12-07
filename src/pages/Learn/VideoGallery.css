@@ -1,0 +1,465 @@
+/* ===============================
+   🎥 VIDEO GALLERY STYLING
+   =============================== */
+.video-gallery {
+  flex: 1;
+  margin-left: 240px;
+  margin-top: 105px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.video-gallery h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+.thumbnail,
+video {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0 5px;
+}
+
+.video-card span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-left: 8px;
+}
+
+.video-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.unlock-btn,
+.watch-btn,
+.quiz-btn,
+.cert-btn,
+.submit-btn {
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.unlock-btn {
+  background: #0c9a43;
+  color: #fff;
+}
+
+.watch-btn {
+  border: 1px solid #0073ff;
+  color: #0073ff;
+  background: #fff;
+}
+
+.quiz-btn {
+  background: #ffb300;
+  color: #111;
+}
+
+.cert-btn {
+  border: 1px solid #ff3b3b;
+  color: #ff3b3b;
+  background: #fff;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.share-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+}
+
+.share-icons i:hover {
+  color: #111;
+}
+
+/* ===============================
+   🧩 QUIZ MODAL STYLING
+   =============================== */
+.quiz-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.quiz-container {
+  background: #fff;
+  width: 750px;
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.quiz-header {
+  background: linear-gradient(90deg, #ffeb3b, #fff176);
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #22c55e;
+}
+
+.quiz-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quiz-header i {
+  font-size: 22px;
+  color: #222;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #e5e7eb;
+}
+
+.progress {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 0 5px 5px 0;
+  transition: width 0.4s ease;
+}
+
+.quiz-content {
+  padding: 25px 35px;
+}
+
+.quiz-content h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.option {
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.25s ease;
+}
+
+.option:hover {
+  background: #fef9c3;
+  border-color: #facc15;
+}
+
+.option input {
+  margin-right: 10px;
+  accent-color: #22c55e;
+}
+
+.option.selected {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.quiz-footer button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prev-btn {
+  background: #f3f4f6;
+  color: #111;
+}
+
+.next-btn {
+  background: linear-gradient(to right, #facc15, #a3e635);
+  color: #000;
+}
+
+.next-btn:hover {
+  background: linear-gradient(to right, #fbbf24, #84cc16);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   🎬 VIDEO MODAL STYLING
+   =============================== */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.video-popup {
+  background: #fff9db;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffeb3b;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.video-popup video {
+  width: 100%;
+  height: auto;
+}
+
+/* ===============================
+   📤 CERTIFICATE + SHARE STYLING
+   =============================== */
+.share-cert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-share a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.wa-share {
+  background-color: #25D366;
+}
+
+.fb-share {
+  background-color: #1877F2;
+}
+
+.ig-share {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-share a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   📱 RESPONSIVE DESIGN
+   =============================== */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .video-gallery {
+    margin-left: 0;
+    margin-top: 80px;
+    padding: 0 10px;
+  }
+
+  .video-card {
+    width: 45%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .video-gallery {
+    margin-left: 0;
+    margin-top: 70px;
+    padding: 0 8px;
+  }
+
+  .video-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .video-card h3 {
+    font-size: 16px;
+  }
+
+  .video-card p {
+    font-size: 13px;
+  }
+
+  .btn-row {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 8px;
+  }
+
+  .btn-row button {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .quiz-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .quiz-header h3 {
+    font-size: 18px;
+  }
+
+  .quiz-content {
+    padding: 15px 20px;
+  }
+
+  .quiz-footer button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .video-popup {
+    width: 95%;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .video-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .video-gallery h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .referral-income-card h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn-row {
+    gap: 6px;
+  }
+
+  .btn-row button {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .video-popup {
+    width: 100%;
+  }
+}

@@ -1,0 +1,183 @@
+/* ===== Container ===== */
+.view-videos-container {
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 65px;
+}
+
+/* ===== Title ===== */
+.page-title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 283px;
+}
+
+/* ===== Grid Layout ===== */
+.plans-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ===== Plan Card ===== */
+.plan-card {
+  position: relative;
+  width: 360px;
+  height: 220px;
+  border-radius: 18px;
+  padding: 25px 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Ribbon ===== */
+.ribbon {
+  position: absolute;
+  top: 12px;
+  right: -30px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #222;
+  font-size: 12px;
+  font-weight: 700;
+  transform: rotate(45deg);
+  width: 90px;
+  text-align: center;
+  padding: 4px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Text ===== */
+.plan-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.plan-card p {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.plan-card p span {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+/* ===== Footer ===== */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.astronaut {
+  width: 45px;
+  height: 45px;
+}
+
+/* ===== Buttons ===== */
+.open-btn {
+  background: #ffb300;
+  color: #111;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.open-btn:hover {
+  background: #ffc933;
+}
+
+/* ===== Locked Box ===== */
+.locked-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lock-icon {
+  font-size: 26px;
+  color: #b37e7e;
+}
+
+.locked-btn {
+  background: #ddd;
+  border: none;
+  color: #777;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+/* ===== Locked Card Style ===== */
+.locked {
+  opacity: 0.8;
+  position: relative;
+}
+
+.locked::before {
+  content: "🔒";
+  font-size: 60px;
+  color: rgba(120, 80, 80, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 1;
+}
+
+.locked *:not(.ribbon)::not(.fa-lock) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Locked button visibility fix */
+.locked .locked-box {
+  position: relative;
+  z-index: 3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .plan-card {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-card {
+    width: 90%;
+    height: 200px;
+  }
+}

@@ -1,0 +1,105 @@
+.notification-container {
+   flex: 1;
+  margin-left: 240px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  background: #f6f7fb;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #202224;
+  margin-bottom: 20px;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.entries-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.search-box {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.notification-table th,
+.notification-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e8eaed;
+  text-align: left;
+  font-size: 14px;
+}
+
+.notification-table th {
+  background-color: #f8f9fb;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  background-color: #2ecc71;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-buttons button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-buttons button.active {
+  background-color: #6045d8;
+  color: white;
+  border-color: #6045d8;
+}
+
+.pagination-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,266 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  z-index: 200;
+  transition: transform 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+/* ===== Header ===== */
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-logo {
+  width: 131px;
+  height: 58px;
+  border-radius: 12px;
+  object-fit: cover; 
+  margin-right: 123px;
+}
+
+.logged-info {
+  font-size: 12px;
+  color: #028a0f;
+  background: #e8f9f0;
+  border-radius: 12px;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+/* ===== Navigation ===== */
+.nav-section {
+  padding: 15px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #444;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-align: left;
+  margin-bottom: 5px;
+  transition: 0.2s;
+}
+
+.menu-item:hover {
+  background: #f5f5ff;
+  color: #4b49e6;
+}
+
+.menu-item.active {
+  background: #ecebff;
+  color: #4b49e6;
+  font-weight: 600;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== Submenu ===== */
+.submenu {
+  margin-left: 25px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.submenu-link {
+  font-size: 16px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.submenu-link:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.submenu-link.active {
+  background: #4b49e6;
+  color: #fff;
+}
+
+/* ===== Disabled Menus ===== */
+.menu-item.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===== Toggle Button (for small screens) ===== */
+.sidebar-toggle-btn {
+  display: none;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  background: #4b49e6;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 20px;
+  z-index: 300;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Links Styling ===== */
+.sidebar a {
+  text-decoration: none !important;
+}
+
+.sidebar a.active {
+  text-decoration: none !important;
+}
+
+.sidebar a:hover {
+  text-decoration: none !important;
+}
+
+/* =====================================================
+   ✅ RESPONSIVE DESIGN SECTION
+   ===================================================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .menu-title {
+    font-size: 16px;
+  }
+
+  .submenu-link {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices (max-width: 900px) */
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle-btn {
+    display: block;
+  }
+
+  .sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-item {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .menu-title {
+    font-size: 15px;
+  }
+
+  .submenu-link {
+    font-size: 13px;
+  }
+
+  .sidebar-header {
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    width: 110px;
+    height: 50px;
+  }
+}
+
+/* Small Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 190px;
+  }
+
+  .menu-title {
+    font-size: 14px;
+  }
+
+  .submenu-link {
+    font-size: 12px;
+  }
+
+  .logged-info {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+
+  .sidebar-logo {
+    width: 95px;
+    height: 45px;
+  }
+}
+
+/* Extra Small Mobile (max-width: 400px) */
+@media (max-width: 400px) {
+  .sidebar {
+    width: 170px;
+  }
+
+  .menu-title {
+    font-size: 13px;
+  }
+
+  .submenu-link {
+    font-size: 11px;
+  }
+
+  .sidebar-toggle-btn {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+}

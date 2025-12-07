@@ -1,0 +1,155 @@
+.deposit-history-container {
+  flex: 1;
+  margin-left: 240px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  
+  background: #f7f8fc;
+  padding: 30px;
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+.deposit-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.summary-card {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+.summary-item span {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.summary-item.yellow {
+  color: #ffb300;
+}
+.summary-item.green {
+  color: #00c853;
+}
+.summary-item.cyan {
+  color: #00bcd4;
+}
+.summary-item.red {
+  color: #e53935;
+}
+
+/* Table Controls */
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.entries-select select {
+  margin: 0 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-box input {
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+/* Table */
+.table-container {
+  background: #fff;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.deposit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.deposit-table thead {
+  background: #f1f3f6;
+}
+
+.deposit-table th,
+.deposit-table td {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.pagination-controls button {
+  background: #6a1b9a;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.pagination-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summary-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

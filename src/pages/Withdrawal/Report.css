@@ -1,0 +1,117 @@
+.report-container {
+  padding: 30px;
+  background: #f8f9fc;
+  min-height: 100vh;
+  flex: 1;
+  margin-left: 240px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.report-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.summary-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+}
+
+.summary-item {
+  text-align: center;
+  font-weight: 600;
+}
+
+.summary-item p {
+  margin-top: 5px;
+}
+
+.yellow {
+  color: orange;
+}
+
+.green {
+  color: #008000;
+}
+
+.cyan {
+  color: #00c5d9;
+}
+
+.red {
+  color: #d9534f;
+}
+
+.table-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 200px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  text-align: center;
+}
+
+.report-table th {
+  background: #f3f4f8;
+  font-weight: 600;
+}
+
+.no-data {
+  color: #666;
+  padding: 20px 0;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #6a1b9a;
+  color: #fff;
+}

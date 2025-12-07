@@ -1,0 +1,42 @@
+.app-layout {
+  display: flex;
+}
+
+.main-container {
+  flex: 1;
+  margin-left: 240px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+
+.dashboard-full {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  background-color: #fff;
+}
+
+
+@media (max-width: 900px) {
+  .main-container {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
+
+
+/* Disable App.css styling for specific routes */
+.no-app-css {
+  all: unset;
+  display: block;
+}

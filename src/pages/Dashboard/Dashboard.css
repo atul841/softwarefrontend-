@@ -1,0 +1,139 @@
+
+.dashboard {
+  margin-left: 240px;
+  margin-top: 65px;
+  padding: 25px;
+  background: #f9f9ff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Card Row (Horizontal Scroll Section) */
+.card-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 15px 10px;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  
+}
+
+.card-row::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Each Card Style */
+.card {
+  flex: 0 0 320px;
+  height: 130px;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px ; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+.card-icon {
+  font-size: 28px; /* Icon size */
+  margin-bottom: 10px;
+  color: #000000ff; /* You can customize this per color if needed */
+}
+
+.card h3 {
+  color: #ffffff;
+  margin-top:-8px ;
+}
+.card p {
+  color: #ffffff;
+  font-size :20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Color variations */
+.card.green {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.card.red {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.card.blue {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.card.yellow {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: #858cfaff;
+  color: #005a24ff;
+}
+
+.scroll-left {
+  left: -10px;
+}
+
+.scroll-right {
+  right: -10px;
+}
+
+/* Make Responsive for Small Screens */
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .card {
+    flex: 0 0 180px;
+    height: 120px;
+    font-size: 14px;
+  }
+
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+

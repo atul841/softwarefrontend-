@@ -1,0 +1,105 @@
+.withdrawal-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  background: #f8f9fc;
+  min-height: 100vh;
+   flex: 1;
+  margin-left: 240px; 
+  margin-top: 65px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.withdrawal-card {
+  background: #fff;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+}
+
+.withdrawal-header h3 {
+  background: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.withdrawal-note {
+  color: red;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.wallet-box {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-label {
+  background: #7b1fa2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px 0 0 4px;
+  font-weight: 500;
+}
+
+.wallet-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 0 4px 4px 0;
+  background: #f4f6fa;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-proceed {
+  background: #6a1b9a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-proceed:hover {
+  background: #4a148c;
+}
+
+.btn-cancel {
+  background: #b0b0b0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
