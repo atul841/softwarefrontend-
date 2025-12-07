@@ -10,7 +10,7 @@ import Purchase from "./pages/Purchase/Purchase";
 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import MyProfile from "./pages/Profile/MyProfile";
-import KycDetails from "./pages/Profile/KycDetails";
+import KYCDetails from "./pages/Profile/KYCDetails";
 import MySubordinate from "./pages/Members/MySubordinate";
 import MySubordinateLevel from "./pages/Members/MySubordinateLevel";
 import PurchaseSubscription from "./pages/Subscription/PurchaseSubscription";
@@ -100,7 +100,7 @@ function Layout() {
               path="/myprofile/kyc-details" 
               element={         
                 <ProtectedRoute>   
-                  <KycDetails />  
+                  <KYCDetails />  
                 </ProtectedRoute>   
               }
             />
